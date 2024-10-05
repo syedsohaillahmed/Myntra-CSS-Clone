@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist" sans-serif;
+
+}
+
+p, li, a {
+    font-family: "Urbanist" sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--para-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* theme */
+
+:root{
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color:#424242;
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --para-color: #504e4d;
+}
+
+/* layout */
+
+.container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.6rem;
+
+}
+
+header{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 6px 10px 0px,rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.2rem;
+}
+
+
+
+
+.unOrderedList {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+    
+}
+
+.unOrderedList a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 00%;
+        border-bottom: 0.2rem solid var(--main-color);
+        transition: 0.3s linear;
+    }
+}
+
+.unOrderedList a:hover{
+    &::after{
+        width: 100%;
+    }
+}
+
+/* mainn conetent */
+
